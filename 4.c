@@ -7,12 +7,9 @@ DATA REQUIREMENTS */
 #define GBP 0.65
 int main(){
 	//Problem Input
-	float dollar; /*currency in US dollars*/
+	float dollar = 50; /*currency in US dollars*/
 	//Problem Output
 	float pound; /*currency in British pounds*/
-	
-	printf("Enter amount US dollars : ");
-	scanf("%f", &dollar);
 	pound = dollar * GBP;
 	printf("Convert %.2f US dollars = %.2f British pounds", dollar, pound);
 	
