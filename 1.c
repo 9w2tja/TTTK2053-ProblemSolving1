@@ -23,22 +23,20 @@ Printf("%d%%", SALES_TAX);
 */
 
 #include <stdio.h>
-#define STD_DISCOUNT 20.0
+#define DISCOUNT 20.0
 #define TAX 5.0
 
 int main(void){
-	double purchase, discount, sales_tax;
+	double purchase=122.00, discount, sales_tax;
 	char student;
 
 	printf("Student <y/n> : ");
 	scanf("%c", &student);
-	printf("Enter purchase total : $");
-	scanf("%lf", &purchase);
 	
 	printf("Total purchases $%.2lf\n", purchase);
 	if (student=='y'){
-		discount = purchase*(STD_DISCOUNT/100);
-		printf("Student’s discount (%.0lf%%) %.2lf\n", STD_DISCOUNT, discount);
+		discount = purchase*(DISCOUNT/100);
+		printf("Student’s discount (%.0lf%%) %.2lf\n", DISCOUNT, discount);
 		purchase = purchase-discount;
 		printf("Discounted total %.2lf\n", purchase);
 	}
