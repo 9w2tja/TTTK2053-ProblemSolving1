@@ -7,7 +7,7 @@ Each employee is to be paid time and a half for all hours worked over
 40. A tax amount of 3.625% of gross salary will be deducted.
 
 The program output
-should show the employee’s number and net pay. Display the total payroll
+should show the employeeâ€™s number and net pay. Display the total payroll
 and the average amount paid at the end of the run.
 
 Input
@@ -24,13 +24,8 @@ ID, Net Pay. total payroll & average
 #define TAX 3.625
 
 int main (void){
-	int ID, employee;
+	int ID, employee=5;
 	double hourly_wage, hours_worked, overtime, overtime_pay, gross_salary, net_pay, avg_amount, payroll; 
-	
-	printf("Enter Total Employee : ");
-	scanf("%i", &employee);
-	printf("\n");
-
 	
 	for (int x=0; x<employee; x++){
 		printf("Enter employee ID : ");
@@ -52,10 +47,8 @@ int main (void){
 			net_pay = gross_salary-((TAX/100)*gross_salary); //
 		}
 		
-		printf("-----------------------\n");
-		printf("Employee ID : %i\n", ID);
-		printf("Net Pay : RM%.2lf\n", net_pay);
-		printf("-----------------------\n\n");
+		printf("Employee ID : %i", ID);
+		printf("Net Pay : %.2lf", net_pay);
 
 		
 		payroll += net_pay;
@@ -64,10 +57,9 @@ int main (void){
 	
 	avg_amount = payroll/employee;	
 	
-	printf("=======================\n");
-	printf("Total Payroll : RM%.2lf\n", payroll);
-	printf("Average Amount Paid : RM%.2lf\n", avg_amount);
-	printf("=======================\n");
+	printf("Total Payroll : %.2lf", payroll);
+	printf("Average Amount Paid : %.2lf", avg_amount);
+
 
 	
 
