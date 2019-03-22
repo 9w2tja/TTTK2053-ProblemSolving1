@@ -1,17 +1,17 @@
 /*
-Write a program that calculates the user’s body mass index (BMI) and categorizes
+Write a program that calculates the userâ€™s body mass index (BMI) and categorizes
 it as underweight, normal, overweight, or obese, based on the following
 table from the United States Centers for Disease Control:
 
 BMI 			Weight Status
 Below 18.5		Underweight
-18.5–24.9 		Normal
-25.0–29.9 		Overweight
+18.5â€“24.9 		Normal
+25.0â€“29.9 		Overweight
 30.0 and above 	Obese
 
 To calculate BMI based on weight in pounds ( wt_lb ) and height in inches
 ( ht_in ), use this formula (rounded to tenths):
-703 * wt_lb / ht_in²
+703 * wt_lb / ht_inÂ²
 
 Prompt the user to enter weight in pounds and height in inches.
 */
@@ -19,12 +19,7 @@ Prompt the user to enter weight in pounds and height in inches.
 #include <stdio.h>
 
 int main (void){
-	float wt_lb, ht_in, bmi;
-	
-	printf("Enter your weight (pounds) : ");
-	scanf("%f", &wt_lb);
-	printf("Enter your height (inches) : ");
-	scanf("%f", &ht_in);
+	float wt_lb=200, ht_in=80, bmi;
 	
 	bmi = 703 * wt_lb / (ht_in * ht_in);
 	
