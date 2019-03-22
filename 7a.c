@@ -9,12 +9,8 @@ Speed of vehicles (in miles): 43 23 54 57 58 67 51 90 22 33 11
 88 34 52 75 12 78 32 89 14 65 67 97 53 10 47 34*/
 
 #include <stdio.h>
-int speed, slow=0, medium=0, high=0;
+int speed=100, slow=0, medium=0, high=0;
 int main (void){
-
-	printf("Enter speed of vehicles (in miles) : ");
-	scanf("%i", &speed);
-	
 	if (speed != 0){
 		if (speed < 50)
 			slow++;
@@ -22,7 +18,6 @@ int main (void){
 			medium++;
 		else
 			high++;
-		return main();
 	}
 	
 	printf("Total vehicles high speed : %i\n", high);
