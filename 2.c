@@ -24,7 +24,6 @@ int main (void){
 	bmi = 703 * wt_lb / (ht_in * ht_in);
 	
 	printf("Your BMI : %.1f\n", bmi);
-	printf("Weight Status : ");
 	if (bmi < 18.5)
 		printf("Underweight");
 	else if (bmi < 25.0)
